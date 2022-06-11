@@ -1,0 +1,21 @@
+.active{
+  color: #f28a03 !important;
+}
+
+.mohit{
+    height: 50px;
+    width: 166px;
+    margin-top:-6px;
+}
+@media only screen and (max-width: 991px) {
+    .main-menu {
+
+        padding-top: 23px !important;
+        padding-bottom: 14px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+}

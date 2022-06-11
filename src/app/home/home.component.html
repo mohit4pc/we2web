@@ -1,0 +1,942 @@
+<div class="boxed_wrapper">
+    <!-- <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-faded">
+          <a class="navbar-brand" routerLink="/"><img class="navbar-logo" src="./assets/todo_logo.png" alt="Logo"></a>
+      
+          <button  (click)="toggleMenu()" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+      
+          <div [collapse]="isCollapsed" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a  (click)="toggleMenu()" class="nav-link" routerLink="/">All Items</a>
+              </li>
+              <li (click)="toggleMenu()" class="nav-item active">
+                <a class="nav-link" routerLink="/unknown">"Unknown"</a>
+              </li>
+              <li (click)="toggleMenu()" class="nav-item active">
+                <a class="nav-link" routerLink="/login">Login</a>
+              </li>
+      
+              <li (click)="toggleMenu()" class="nav-item active">
+                <a class="nav-link" routerLink="/signup">Signup</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active" (click)="logout()">
+                <a class="nav-link" routerLink="" (click)="toggleMenu()">logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+   -->
+  
+    <!-- Top bar area -->  
+
+    <!--End header area-->    
+        
+    <!--Start rev slider wrapper-->     
+   <section>
+    <ngb-carousel  *ngIf="images">
+        <ng-template ngbSlide>
+          <div class="wrapper">
+            <img src="../../assets/images/sidebar/2.png" alt="Random first slide" >
+          </div>
+          <div class="carousel-caption">
+            <h3>First Slide</h3>
+            <p> Angular 10 Carousel Example </p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="wrapper">
+            <img src="../../assets/images/sidebar/3.png" alt="Random second slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>Second Slide</h3>
+            <p> Check out Techiediaries</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="wrapper">
+            <img src="../../assets/images/sidebar/4.png"  alt="Random third slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>Third Slide</h3>
+            <p>for full tutorial...</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+   </section>
+    <!--End rev slider wrapper--> 
+    
+    <!--Start call To action area-->
+    <section class="call-toaction-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <ul>
+                        <li>
+                            <div class="left-content float-left">
+                                <div class="icon-holder">
+                                    <img  class="social-icon"src="../../assets/images/services/facebook.png">    
+                                </div>
+                                <div class="title-holder">
+                                    <h3>Facebook</h3>
+                                    <span class="thm-clr">Facebook</span>
+                                </div>
+                            </div>
+                            <div class="right-content float-right">
+                                <div class="read-more-button">
+                                    <div class="inner">
+                                        <a href="https://www.facebook.com/we2web"><span class="icon-arrows"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="left-content float-left">
+                                <div class="icon-holder">
+                                    <img class="social-icon" src="../../assets/images/services/instagram.png">
+                                </div>
+                                <div class="title-holder">
+                                    <h3>Instagram</h3>
+                                    <span class="thm-clr">Instagram</span>
+                                </div>
+                            </div>
+                            <div class="right-content float-right">
+                                <div class="read-more-button">
+                                    <div class="inner">
+                                        <a href="https://www.instagram.com/we2web/"><span class="icon-arrows"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-content float-left">
+                                <div class="icon-holder">
+                                    <img class="social-icon" src="../../assets/images/services/twitter.png">    
+                                </div>
+                                <div class="title-holder">
+                                    <h3>Twitter</h3>
+                                    <span class="thm-clr">Twitter</span>
+                                </div>
+                            </div>
+                            <div class="right-content float-right">
+                                <div class="read-more-button">
+                                    <div class="inner">
+                                        <a href="https://twitter.com/we2web"><span class="icon-arrows"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>     
+                    </ul>
+                </div>
+            </div> 
+        </div>    
+    </section>
+    <!--End call To action area-->
+    
+    <!--Start services area-->
+    <section class="services-area">
+     
+        <div class="container">
+            <div class="sec-title text-center">
+                <div class="title">Our Services</div>
+                <div class="dector thm-bg-clr center"></div>
+            </div>
+            <div class="row">
+                <!--Start single service item-->
+                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                    <div class="single-service-item">
+                        <div class="inner-content">
+                            <div class="img-holder">
+                                <img class="m" src="../../assets/images/services/1.jpg" alt="Awesome Image">
+                            </div>
+                            <div class="title-holder">
+                                <div class="icon"><img class="display-icon" src="../../assets/images/services/digital.png"></div>
+                                <h3>Digital Marketing</h3>
+                            </div>
+                        </div>
+                        <div class="overlay-content-top">
+                            <div class="title-holder">
+                                <div class="icon"><img class="mobile" src="../../assets/images/services/digital.png"></div>
+                                <h3>Digital Marketing</h3>
+                            </div>
+                            <div class="text-holder">
+                                <p class= "golu">Going digital is the way forward for any business, and we try to reflect our beliefs through dedication in our digital marketing services.</p>
+                            </div>  
+                        </div>
+                        <div class="overlay-content-bottom">
+                            <div class="read-more-button">
+                                <a routerLink="/services">Read More<span class="icon-arrows"></span></a>    
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <!--End single service item-->
+                <!--Start single service item-->
+                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                    <div class="single-service-item">
+                        <div class="inner-content">
+                            <div class="img-holder">
+                              <img class="m" src="../../assets/images/services/app.jpg" alt="Awesome Image">
+                            </div>
+                            <div class="title-holder">
+                                <div class="icon"><img class="display-icon" src="../../assets/images/services/mobile.png"></div>
+                                <h3>Mobile App Development</h3>
+                            </div>
+                        </div>
+                        <div class="overlay-content-top">
+                            <div class="title-holder">
+                                <div class="icon"><img class="mobile" src="../../assets/images/services/mobile.png"></div>
+                                <h3>Mobile App Development</h3>
+                            </div>
+                            <div class="text-holder">
+                                <p class= "golu">In this digital era website, mobile applications are basic identity of businesses. We provide Mobile App Development in timely manner. Our Apps works on both Android and iOS Platforms.</p>
+                            </div>  
+                        </div>
+                        <div class="overlay-content-bottom">
+                            <div class="read-more-button">
+                                <a  routerLink="/services">Read More<span class="icon-arrows"></span></a>    
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <!--End single service item-->
+                <!--Start single service item-->
+                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                    <div class="single-service-item">
+                        <div class="inner-content">
+                            <div class="img-holder">
+                              <img  class="m" src="../../assets/images/services/webhosting.jpg" alt="Awesome Image">
+                            </div>
+                            <div class="title-holder">
+                                <div class="icon"><img class="display-icon" src="../../assets/images/services/webhosting1.png"></div>
+                                <h3>Web Hosting</h3>
+                            </div>
+                        </div>
+                        <div class="overlay-content-top">
+                            <div class="title-holder">
+                                <div class="icon"><img class="mobile" src="../../assets/images/services/webhosting1.png"></div>
+                                <h3>Web Hosting</h3>
+                            </div>
+                            <div class="text-holder">
+                                <p class= "golu">We2Web is a Global Website Hosting Provider to bring you the most up-to-date and cost effective web hosting services. </p>
+                            </div>  
+                        </div>
+                        <div class="overlay-content-bottom">
+                            <div class="read-more-button">
+                                <a  routerLink="/services">Read More<span class="icon-arrows"></span></a>    
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <!--End single service item-->
+                
+                <!--Start single service item-->
+                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                    <div class="single-service-item">
+                        <div class="inner-content">
+                            <div class="img-holder">
+                              <img  class="m" src="../../assets/images/services/web.jpg" alt="Awesome Image">
+                            </div>
+                            <div class="title-holder">
+                                <div class="icon"><img class="display-icon" src="../../assets/images/services/web.png"></div>
+                                <h3>Web Design & Development</h3>
+                            </div>
+                        </div>
+                        <div class="overlay-content-top">
+                            <div class="title-holder">
+                                <div class="icon"><img class="mobile" src="../../assets/images/services/web.png"></div>
+                                <h3>Web Design & Development</h3>
+                            </div>
+                            <div class="text-holder">
+                                <p class= "golu">Professional website designing company in India brings you cost effective approach to design your website.We are offering Web desing services for all kind of small, medium and large enterprises.</p>
+                            </div>  
+                        </div>
+                        <div class="overlay-content-bottom">
+                            <div class="read-more-button">
+                                <a routerLink="/services">Read More<span class="icon-arrows"></span></a>    
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <!--End single service item-->
+                <!--Start single service item-->
+                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                    <div class="single-service-item">
+                        <div class="inner-content">
+                            <div class="img-holder">
+                              <img class="m" src="../../assets/images/services/sco.jpg" alt="Awesome Image">
+                            </div>
+                            <div class="title-holder">
+                                <div class="icon"><img class="display-icon" src="../../assets/images/services/s.png"></div>
+                                <h3>Search Engine Optimization</h3>
+                            </div>
+                        </div>
+                        <div class="overlay-content-top">
+                            <div class="title-holder">
+                                <div class="icon"><img class="mobile" src="../../assets/images/services/s.png"></div>
+                                <h3>Search Engine Optimization</h3>
+                            </div>
+                            <div class="text-holder">
+                                <p class= "golu">A Good SEO practice is the backbone of the behavior of your website in search engine ranking. We2Webis the leading SEO service company in India. </p>
+                            </div>  
+                        </div>
+                        <div class="overlay-content-bottom">
+                            <div class="read-more-button">
+                                <a routerLink="/services">Read More<span class="icon-arrows"></span></a>    
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <!--End single service item-->
+                <!--Start single service item-->
+                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                    <div class="single-service-item">
+                        <div class="inner-content">
+                            <div class="img-holder">
+                              <img class="m" src="../../assets/images/services/mohit.jpg.png" alt="Awesome Image">
+                            </div>
+                            <div class="title-holder">
+                                <div class="icon"><img class="display-icon" src="../../assets/images/services/mohit.png"></div>
+                                <h3>Graphic Desiging</h3>
+                            </div>
+                        </div>
+                        <div class="overlay-content-top">
+                            <div class="title-holder">
+                                <div class="icon"><img class="mobile" src="../../assets/images/services/mohit.png"></div>
+                                <h3>Graphic Desiging</h3>
+                            </div>
+                            <div class="text-holder">
+                                <p class= "golu">We add power to graphics designing individual services. We create beautiful desings for websites, banners, flex, Visiting Cards, Brouchers, Logo and Much More..</p>
+                            </div>  
+                        </div>
+                        <div class="overlay-content-bottom">
+                            <div class="read-more-button">
+                                <a routerLink="/services">Read More<span class="icon-arrows"></span></a>    
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <!--End single service item-->
+            </div>
+        </div>
+    </section>
+    <!--End services area-->
+    
+    <!--Start latest project area-->
+    <section class="latest-project-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="sec-title">
+                        <div class="title">Latest Projects</div>
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="text">
+                        <p>Athlete’s, Professionals and Businesses All Hire Coaches To Help Them Improve their Health, Performance,
+                        Relationships & Achieve their Goals. You Can Too!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="project-carousel owl-carousel owl-theme">
+                        <!--Start single project-->
+                        <div class="single-project">
+                            <div class="img-holder">
+                                <img src="images/projects/latest-project-1.jpg" alt="Awesome Image">
+                                <div class="top-overlay">
+                                    <div class="title">
+                                        <div class="box">
+                                            <h3><a href="cases-single.html">Leading Consumer Product<br> Companies</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-overlay">
+                                    <div class="box">
+                                        <div class="read-more-button">
+                                            <a class="thm-clr" href="cases-single.html">Read More<span class="icon-arrows"></span></a>    
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>    
+                        </div>
+                        <!--End single project-->
+                        <!--Start single project-->
+                        <div class="single-project">
+                            <div class="img-holder">
+                                <img src="images/projects/latest-project-2.jpg" alt="Awesome Image">
+                                <div class="top-overlay">
+                                    <div class="title">
+                                        <div class="box">
+                                            <h3><a href="cases-single.html">Leading Consumer Product<br> Companies</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-overlay">
+                                    <div class="box">
+                                        <div class="read-more-button">
+                                            <a class="thm-clr" href="cases-single.html">Read More<span class="icon-arrows"></span></a>    
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>    
+                        </div>
+                        <!--End single project-->
+                        <!--Start single project-->
+                        <div class="single-project">
+                            <div class="img-holder">
+                                <img src="images/projects/latest-project-3.jpg" alt="Awesome Image">
+                                <div class="top-overlay">
+                                    <div class="title">
+                                        <div class="box">
+                                            <h3><a href="cases-single.html">Leading Consumer Product<br> Companies</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-overlay">
+                                    <div class="box">
+                                        <div class="read-more-button">
+                                            <a class="thm-clr" href="cases-single.html">Read More<span class="icon-arrows"></span></a>    
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>    
+                        </div>
+                        <!--End single project-->
+                        
+                        <!--Start single project-->
+                        <div class="single-project">
+                            <div class="img-holder">
+                                <img src="images/projects/latest-project-1.jpg" alt="Awesome Image">
+                                <div class="top-overlay">
+                                    <div class="title">
+                                        <div class="box">
+                                            <h3><a href="cases-single.html">Leading Consumer Product<br> Companies</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-overlay">
+                                    <div class="box">
+                                        <div class="read-more-button">
+                                            <a class="thm-clr" href="cases-single.html">Read More<span class="icon-arrows"></span></a>    
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>    
+                        </div>
+                        <!--End single project-->
+                        <!--Start single project-->
+                        <div class="single-project">
+                            <div class="img-holder">
+                                <img src="images/projects/latest-project-2.jpg" alt="Awesome Image">
+                                <div class="top-overlay">
+                                    <div class="title">
+                                        <div class="box">
+                                            <h3><a href="cases-single.html">Leading Consumer Product<br> Companies</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-overlay">
+                                    <div class="box">
+                                        <div class="read-more-button">
+                                            <a class="thm-clr" href="cases-single.html">Read More<span class="icon-arrows"></span></a>    
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>    
+                        </div>
+                        <!--End single project-->
+                        <!--Start single project-->
+                        <div class="single-project">
+                            <div class="img-holder">
+                                <img src="images/projects/latest-project-3.jpg" alt="Awesome Image">
+                                <div class="top-overlay">
+                                    <div class="title">
+                                        <div class="box">
+                                            <h3><a href="cases-single.html">Leading Consumer Product<br> Companies</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-overlay">
+                                    <div class="box">
+                                        <div class="read-more-button">
+                                            <a class="thm-clr" href="cases-single.html">Read More<span class="icon-arrows"></span></a>    
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>    
+                        </div>
+                        <!--End single project-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End latest project area-->
+    
+    <!--Start about area-->
+    <section class="about-area" style="background-image: url(images/resources/about-bg.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-10 col-md-12 col-sm-12">
+                    <div class="about-text">
+                        <div class="sec-title">
+                            <div class="title">About Our Company</div>
+                            <div class="dector thm-bg-clr"></div>
+                        </div>
+                        <div class="inner-content">
+                            <h2><span class="thm-clr">We2web</span></h2>
+                            <p style="text-align:justify ;">We2Web is capable enough to convey Web Development Services and Digital Marketing over the world. As innovation is progressing at a huge movement and digitalization of the world we are doing work in technical fields , for example, ecommerce Web Development, and Mobile App Development with the most recent innovation headway devices. We also providing industrial level training of website/android app development and digital marketing.We have the happiness of connecting with the best digital marketing companies hailing from various businesses. This has improved our profit, momentum on our task and connection with our customers. We have a topper hand in giving solutions over all methods, from online to digital to social media.</p>
+                            <div class="bottom">
+                                <p class="thm-clr">Company Leader : Deepak Verma</p>
+                                <div class="signature">
+                                   
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>    
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <div class="about-right-box">
+                        <ul>
+                            <li>
+                                <div class="left-content float-left">
+                                    <div class="icon"><span class="icon-graphic thm-clr"></span></div>
+                                    <div class="title">
+                                        <h3>Projects</h3>
+                                        <span>By Our Experienced Team</span>
+                                    </div>    
+                                </div>
+                                <div class="right-content float-right">
+                                    <div class="title">
+                                        <h1>10</h1>
+                                    </div>    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-content float-left">
+                                    <div class="icon"><span class="icon-web thm-clr"></span></div>
+                                    <div class="title">
+                                        <h3>Professionals</h3>
+                                        <span>Smart and Hard Workers</span>
+                                    </div>    
+                                </div>
+                                <div class="right-content float-right">
+                                    <div class="title">
+                                        <h1>89</h1>
+                                    </div>    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-content float-left">
+                                    <div class="icon"><span class="icon-symbols thm-clr"></span></div>
+                                    <div class="title">
+                                        <h3>Years Of Experience</h3>
+                                        <span>We Provides All Industry Services</span>
+                                    </div>    
+                                </div>
+                                <div class="right-content float-right">
+                                    <div class="title">
+                                        <h1>15+</h1>
+                                    </div>    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-content float-left">
+                                    <div class="icon"><span class="icon-people thm-clr"></span></div>
+                                    <div class="title">
+                                        <h3>Satisfied Customers</h3>
+                                        <span>Most Trusted Company By Experts</span>
+                                    </div>    
+                                </div>
+                                <div class="right-content float-right">
+                                    <div class="title">
+                                        <h1>574</h1>
+                                    </div>    
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <!--End about area-->
+    
+    <!--Start choosing area-->
+    <!-- <section class="choosing-area">
+        <div class="container">
+            <div class="sec-title text-center">
+                <div class="title">Reason For Choose Us</div>
+                <div class="dector thm-bg-clr center"></div>
+            </div>
+            <div class="row">
+                Start single choosing item-->
+                <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="single-choosing-item">
+                        <div class="top">
+                            <div class="title-holder float-left">
+                                <h3>25 Years<br> Experience</h3>
+                            </div>
+                            <div class="icon-holder float-right">
+                                <span class="icon-business2"></span>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <p>Great explorer of the truth, the master builder of our human happiness. No one rejects, dislikes, or avoids pleasure itself...</p>
+                            <a class="readmore" href="#">Read More</a>    
+                        </div>
+                    </div>
+                </div>
+                End single choosing item-->
+                <!--Start single choosing item-->
+                <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="single-choosing-item">
+                        <div class="top">
+                            <div class="title-holder float-left">
+                                <h3>Dedicated<br> Team</h3>
+                            </div>
+                            <div class="icon-holder float-right">
+                                <span class="icon-people-1"></span>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <p>There anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occur in  toil and procure...</p>
+                            <a class="readmore" href="#">Read More</a>    
+                        </div>
+                    </div>
+                </div>
+                End single choosing item -->
+                <!--Start single choosing item-->
+                <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="single-choosing-item">
+                        <div class="top">
+                            <div class="title-holder float-left">
+                                <h3>First Quality<br> Service</h3>
+                            </div>
+                            <div class="icon-holder float-right">
+                                <span class="icon-cogwheel"></span>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <p>Ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any  find fault chooses...</p>
+                            <a class="readmore" href="#">Read More</a>    
+                        </div>
+                    </div>
+                </div> -->
+                <!--End single choosing item-->
+                <!--Start single choosing item-->
+                <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="single-choosing-item">
+                        <div class="top">
+                            <div class="title-holder float-left">
+                                <h3>24*7 Hours<br> Support</h3>
+                            </div>
+                            <div class="icon-holder float-right">
+                                <span class="icon-technology2"></span>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <p>Denouncing pleasure and praising pain was born seds will give you a complete account of the system, and expound the actual...</p>
+                            <a class="readmore" href="#">Read More</a>    
+                        </div>
+                    </div>
+                </div>
+                End single choosing item-->               
+            <!-- </div>
+        </div>    
+    </section> -->
+    <!--End choosing area-->
+    
+    <!--Start testimonial area-->
+    <section class="testimonial-area parallax-bg-one" style="background-image: url(images/parallax-background/testimonial-bg.jpg);">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testimonial-outer">
+                        <div class="client-testimonial-carousel owl-carousel owl-theme">
+                            <!--Start testimonial block one-->
+                            <div class="testimonial-block-one">
+                                <div class="client-info">
+                                    <div class="img-box">
+                                        <img src="images/testimonial/1.png" alt="Awesome Image">
+                                    </div>
+                                    <div class="text-box">
+                                        <h3>Teena Venanda</h3>
+                                        <span class="thm-clr">CEO/Founder</span>
+                                    </div>
+                                </div>
+                                <div class="text-holder">
+                                    <div class="quote-icon">
+                                        <img src="images/icon/quote.png" alt="Icon">
+                                    </div>
+                                    <p>Must explain to you how mistaken our idea denouncing pleasure & praising pain was born & we will give expound human happiness know to pursue pleasure...</p>
+                                    <div class="read-more-button">
+                                        <a href="#">Continue to REad <span class="icon-arrows"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End testimonial block one-->
+                            <!--Start testimonial block one-->
+                            <div class="testimonial-block-one">
+                                <div class="client-info">
+                                    <div class="img-box">
+                                        <img src="images/testimonial/1.png" alt="Awesome Image">
+                                    </div>
+                                    <div class="text-box">
+                                        <h3>Teena Venanda</h3>
+                                        <span class="thm-clr">CEO/Founder</span>
+                                    </div>
+                                </div>
+                                <div class="text-holder">
+                                    <div class="quote-icon">
+                                        <img src="images/icon/quote.png" alt="Icon">
+                                    </div>
+                                    <p>Must explain to you how mistaken our idea denouncing pleasure & praising pain was born & we will give expound human happiness know to pursue pleasure...</p>
+                                    <div class="read-more-button">
+                                        <a href="#">Continue to REad <span class="icon-arrows"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End testimonial block one-->
+                            <!--Start testimonial block one-->
+                            <div class="testimonial-block-one">
+                                <div class="client-info">
+                                    <div class="img-box">
+                                        <img src="images/testimonial/1.png" alt="Awesome Image">
+                                    </div>
+                                    <div class="text-box">
+                                        <h3>Teena Venanda</h3>
+                                        <span class="thm-clr">CEO/Founder</span>
+                                    </div>
+                                </div>
+                                <div class="text-holder">
+                                    <div class="quote-icon">
+                                        <img src="images/icon/quote.png" alt="Icon">
+                                    </div>
+                                    <p>Must explain to you how mistaken our idea denouncing pleasure & praising pain was born & we will give expound human happiness know to pursue pleasure...</p>
+                                    <div class="read-more-button">
+                                        <a href="#">Continue to REad <span class="icon-arrows"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End testimonial block one-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="brand">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="../../assets/images/brand/1.png" alt="Awesome Brand Image">    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../../assets/images/brand/2.png" alt="Awesome Brand Image">    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../../assets/images/brand/3.png" alt="Awesome Brand Image">    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../../assets/images/brand/4.png" alt="Awesome Brand Image">    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../../assets/images/brand/5.png" alt="Awesome Brand Image">    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../../assets/images/brand/6.png" alt="Awesome Brand Image">    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>     
+                </div>
+            </div> 
+                 
+        </div>
+    </section>
+    <!--End testimonial area-->
+    
+    <!--Start latest blog area-->
+    <section class="latest-blog-area">
+        <div class="container inner-content">
+            <div class="sec-title text-center">
+                <div class="title">Created By Website</div>
+                <div class="dector thm-bg-clr center"></div>
+            </div>
+            <div class="row">
+                <!--Start single blog item-->
+                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                    <div class="single-blog-post">
+                        <div class="img-holder">
+                          <img class="blog-img" src="../../assets/images/blog/1.png" alt="Awesome Image">
+                      
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <p> Service Provider of Computer,Hp laptop,Sony Printer repairing. </p>
+                                        <a href="https://www.kdcomputer.in">Read More<span class="icon-arrows"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="blog-title"><a href="https://www.kdcomputer.in">KD Computer</a></h3> 
+                            <div class="meta-box">
+                                <ul class="meta-info">
+                                    <li><a routerLink="/contact"><span class="icon-shape thm-clr"></span> Get More Inquiry</a></li>
+                                </ul>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End single blog item-->
+                <!--Start single blog item-->
+                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                    <div class="single-blog-post">
+                        <div class="img-holder">
+                          
+                          <img class="blog-img" src="../../assets/images/blog/2.png" alt="Awesome Image">
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <p>To buy second hand laptop, </p>
+                                        <a href="https://www.computerevolution.in/">Read More<span class="icon-arrows"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="blog-title"><a href="https://www.computerevolution.in/">Computer Evolution
+                            </a></h3> 
+                            <div class="meta-box">
+                                <ul class="meta-info">
+                                    <li><a routerLink="/contact"><span class="icon-shape thm-clr"></span> Get More Inquiry</a></li>
+                                </ul>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End single blog item-->
+                <!--Start single blog item-->
+                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                    <div class="single-blog-post">
+                        <div class="img-holder">
+                          <img class="blog-img" src="../../assets/images/blog/3.png" alt="Awesome Image">
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <p>This is the big money maker of your directory site. Listing owners will pay to get their places listed on your site.                                        </p>
+                                        <a href="https://www.adigitaldirectory.com/">Read More<span class="icon-arrows"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="blog-title"><a href="https://www.adigitaldirectory.com/">A Digital Directory</a></h3> 
+                            <div class="meta-box">
+                                <ul class="meta-info">
+                                    <li><a routerLink="/contact"><span class="icon-shape thm-clr"></span> Get More Inquiry</a></li>
+                                </ul>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End single blog item-->
+            </div>
+        </div>
+    </section>
+    <!--End latest blog area--> 
+     
+    <!--Start subscribe form area-->  
+    <section class="subscribe-form-area thm-bg-clr">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="left-text">
+                        <div class="icon"><span class="icon-business-1"></span></div>
+                        <div class="text"><p>Keep up to date, Get latest updates, news and special offers in your inbox...</p></div>
+                    </div>    
+                </div>
+                <div class="col-xl-7 col-lg-12">
+                    <div class="subscribe-form">
+                        <form action="#">
+                            <input type="text" name="email" placeholder="Your e-mail address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>   
+    <!--End subscribe form area-->
+     
+    <!--Start footer top area--> 
+    <section class="footer-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="single-box address-box">
+                        <div class="icon"><span class="icon-signs"></span></div>
+                        <div class="title">
+                            <h3>Address</h3>
+                            <p>2nd Floor Above City Library Fatehabad, Haryana 125050
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="single-box phone-box">
+                        <div class="icon"><span class="icon-technology-1"></span></div>
+                        <div class="title">
+                            <h3>Phone</h3>
+                            <a  href="tel:9306812130" ><p>+91 93068-12130</p></a> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="single-box email-box">
+                        <div class="icon"><span class="icon-multimedia"></span></div>
+                        <div class="title">
+                            <h3>Email</h3>
+                           <a  href="mailto:wetwoweb@gmail.com" target="_blank"><p>info@we2web.com</p></a> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>    
+    </section>          
+    <!--End footer top area-->           
+      
+    <!--Start footer area-->  
+
+    <!--End footer bottom area-->
+    </div>  
+    
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target thm-bg-clr" data-target="html"><span class="fa fa-angle-up"></span></div>
+    <!-- Color Palate / Color Switcher -->
+ 
